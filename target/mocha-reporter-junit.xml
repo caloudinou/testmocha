@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.093" tests="21" failures="1" skipped="4">
+  <testsuite name="Root Suite" timestamp="2016-04-24T21:32:02" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Test de test" timestamp="2016-04-24T21:32:02" tests="1" failures="0" time="0">
+    <testcase name="Root Suite Test de test should do something" time="0" classname="should do something">
+    </testcase>
+  </testsuite>
+  <testsuite name="Percentage first version" timestamp="2016-04-24T21:32:02" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="#evolution" timestamp="2016-04-24T21:32:02" tests="3" failures="0" time="0">
+    <testcase name="Root Suite Percentage first version #evolution should give an evolution" time="0" classname="should give an evolution">
+    </testcase>
+    <testcase name="Root Suite Percentage first version #evolution should handle 0 evolution" time="0" classname="should handle 0 evolution">
+    </testcase>
+    <testcase name="Root Suite Percentage first version #evolution should round values" time="0" classname="should round values">
+    </testcase>
+  </testsuite>
+  <testsuite name="#wait" timestamp="2016-04-24T21:32:02" tests="4" failures="0" time="1.006">
+    <testcase name="Root Suite Percentage first version #wait should exist" time="0" classname="should exist">
+    </testcase>
+    <testcase name="Root Suite Percentage first version #wait should wait" time="1.006" classname="should wait">
+    </testcase>
+  </testsuite>
+  <testsuite name="Percentage version with chai" timestamp="2016-04-24T21:32:03" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="#evolution" timestamp="2016-04-24T21:32:03" tests="3" failures="0" time="0.002">
+    <testcase name="Root Suite Percentage version with chai #evolution should give an evolution" time="0.002" classname="should give an evolution">
+    </testcase>
+    <testcase name="Root Suite Percentage version with chai #evolution should handle 0 evolution" time="0" classname="should handle 0 evolution">
+    </testcase>
+    <testcase name="Root Suite Percentage version with chai #evolution should round values" time="0" classname="should round values">
+    </testcase>
+  </testsuite>
+  <testsuite name="#wait" timestamp="2016-04-24T21:32:03" tests="5" failures="0" time="0.057">
+    <testcase name="Root Suite Percentage version with chai #wait should exist with chai assert" time="0.002" classname="should exist with chai assert">
+    </testcase>
+    <testcase name="Root Suite Percentage version with chai #wait should exist with chai expect" time="0" classname="should exist with chai expect">
+    </testcase>
+    <testcase name="Root Suite Percentage version with chai #wait should wait" time="0.055" classname="should wait">
+    </testcase>
+  </testsuite>
+  <testsuite name="Social" timestamp="2016-04-24T21:32:03" tests="2" failures="0" time="0.002">
+    <testcase name="Root Suite Social should have twitter_url" time="0.002" classname="should have twitter_url">
+    </testcase>
+    <testcase name="Root Suite Social should have facebook_url" time="0" classname="should have facebook_url">
+    </testcase>
+  </testsuite>
+  <testsuite name="#getTwitterContent" timestamp="2016-04-24T21:32:03" tests="3" failures="1" time="2.026">
+    <testcase name="Root Suite Social #getTwitterContent should be a function" time="0" classname="should be a function">
+    </testcase>
+    <testcase name="Root Suite Social #getTwitterContent should call callApi" time="0.02" classname="should call callApi">
+    </testcase>
+    <testcase name="Root Suite Social #getTwitterContent should api return count" time="2.006" classname="should api return count">
+      <failure><![CDATA[Error: timeout of 2000ms exceeded. Ensure the done() callback is being called in this test.]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
