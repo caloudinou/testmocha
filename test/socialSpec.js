@@ -3,7 +3,7 @@ var chai		= require('chai');
 var expect 		= chai.expect;
 var sinon 		= require('sinon');
 var Promise		= require('promise');
-var chaiAsPromise	= require('chai-as-promise');
+//var chaiAsPromise	= require('chai-as-promise');
 
 
 describe('Social', function(){
