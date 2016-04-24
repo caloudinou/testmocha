@@ -4,13 +4,20 @@
   "description": "test unitaire avec mocha",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "checkstyle": "(node node_modules/eslint/bin/eslint.js --config=.eslintrc --output-file ./target/eslint-reporter-checkstyle.xml --format checkstyle ./lib) || (exit 0)",
+    "coverage": "node ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- --recursive --ui bdd --reporter mocha-junit-reporter --reporter-options mochaFile=./target/mocha-reporter-junit.xml --colors test/**/*Spec.js",
+    "documentation": "node ./node_modules/jsdoc/jsdoc.js --recurse --destination ./target/doc --verbose ./lib",
+    "shrinkwrap": "npm shrinkwrap --dev",
+    "test": "node ./node_modules/mocha/bin/mocha --recursive --ui bdd --reporter mocha-junit-reporter --reporter-options mochaFile=./target/mocha-reporter-junit.xml --colors test/*.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai-as-promised": "^5.3.0",
+    "eslint": "^2.8.0",
+    "jsdoc": "^3.4.0",
     "mocha": "^2.4.5",
+    "mocha-junit-reporter": "^1.11.1",
     "sinon": "^1.17.3"
   },
   "dependencies": {
